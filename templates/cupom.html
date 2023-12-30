@@ -1,0 +1,9 @@
+<!doctype html>
+<title>Web App Flask</title>
+{% if user %}
+  <h1>Salve o número do seu cupom, user {{ user }}!</h1>
+  <h3>Cupom:  <b>{{ cupom}}</b> </h3>
+  <span><a href="/">Voltar</a></span>
+{% else %}
+  <h1>Seja bem vindo</h1>
+{% endif %}
