@@ -1,8 +1,14 @@
 <!doctype html>
 <title>Web App Flask</title>
+
 {% if user %}
-  <h1>Seja bem vindo, user_{{ user }}!</h1>
-  <h3>Pegue o seu cupom <a href="/qtde/{{ user }}"><b>AQUI</b></a> </h3>
+  <h1><strong>Exemplo CI CD - Python Flask + Github + Fly.io</strong></h1>
+  <h2>Seja bem vindo, user_{{ user }}!</h2>
+  <h4>Pegue o seu cupom <a href="/qtde/{{ user }}"><b>AQUI</b></a> </h4>
 {% else %}
-  <h1>Seja bem vindo</h1>
+  <h2>Seja bem vindo</h2>
 {% endif %}
+
+
+<img src="{{url_for('static', filename='fly.png')}}" />
+<img src="{{url_for('static', filename='github.png')}}" />
