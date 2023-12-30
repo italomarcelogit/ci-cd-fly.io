@@ -1,0 +1,5 @@
+fly.toml
+.gitignore
+passo-a-passo.txt
+__pycache__/
+env/
